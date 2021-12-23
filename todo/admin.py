@@ -11,4 +11,3 @@ class TodoAdmin(admin.ModelAdmin):
     list_editable = ['is_completed']
 
 admin.site.register(models.Todo, TodoAdmin)
-# admin.site.register(TodoAdmin)
