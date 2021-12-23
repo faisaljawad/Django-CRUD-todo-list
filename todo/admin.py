@@ -8,6 +8,7 @@ class TodoAdmin(admin.ModelAdmin):
     search_fields = ['title', 'body']
     list_filter = ['date_created', 'is_completed']
     list_display = ['title', 'body', 'is_completed', 'date_created']
+    list_editable = ['is_completed']
 
 admin.site.register(models.Todo, TodoAdmin)
 # admin.site.register(TodoAdmin)
